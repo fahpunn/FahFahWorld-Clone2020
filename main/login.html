@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head Header -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/9TjwWkY/fahfahs-brand.png" type="image/icon type">
+    <title>My Account | Fahfahsworld</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- CSS And Java Integration -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- FahFahsWorld Navigator -->
+    <nav class="navbar navbar-expand-lg sticky-top transition-time nav-transition-scroll">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-brand" src="https://fahfahsworld.com/wp-content/uploads/2020/05/vendor-logo-fahfahs.png" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlist" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-align-right"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navlist">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="index.html"><b>HOME</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="shop.html"><b>SHOP</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="blogpage1.html"><b>BLOG</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="aboutus.html"><b>ABOUT US</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="howtobuy.html"><b>HOW TO BUY</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="contactus.html"><b>CONTACT US</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="points&membership.html"><b>POINTS & MEMBERSHIP</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="faq.html"><b>FAQ</b></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#"><i class="fa fa-shopping-cart fa-lg"><span> 0</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="login.html"><i class="fa fa-user-circle-o fa-lg text-to-dark"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#"><i class="fa fa-search fa-lg text-to-dark"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 mt-5">
+                <center>
+                    <a id="login" class="s-50 login-click" href="#" onclick=login()><b>Login&nbsp;</b></a><span class="s-50"> / </span>
+                    <a id="register" class="s-50 register-unclick" href="#" onclick=register()><b>&nbsp;Register</b></a>
+                </center>
+            </div>
+            <div class="col-12 left-thumb">
+                <i class="fa fa-thumbs-o-up fa-lg red-icon s-icon"></i><span class="red-icon">&nbsp;&nbsp;&nbsp;You will get 5 points for SignUp</span>
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4 mt-5" id="change">
+                <label class="text-dark s-14"><b>USERNAME OR EMAIL ADDRESS *</b></label>
+                <input class="form-control" type="text">
+                <label class="text-dark mt-4 s-14"><b>PASSWORD *</b></label>
+                <input id="password" class="form-control" type="password">
+                <a class="password-eye-style" href="#" onclick=eyeControl()>
+                    <span class="fa fa-fw fa-eye password-eye"></span>
+                </a>
+                <button class="login-button mt-4"><b>LOGIN</b></button>
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4 mt-4" id="remember">
+                <input class="checkbox" type="checkbox">
+                <label class="text-dark s-14"><b>&nbsp;&nbsp;REMEMBER ME</b></label>
+                <a class="lost s-14 color-pink" href="#"><b>LOST YOUR PASSWORD?</b></a>
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+            </div>
+            <div class="col-4 mt-5">
+                <p class="center-align"><b>ความหมายของ Order Status แต่ละสถานะ</b><br><br>
+
+                    On Hold = ได้รับคำสั่งซื้อแล้วแต่รอการชำระเงินอยู่<br>
+                    Checking Payment = ได้รับการชำระเงินแล้ว รอตรวจสอบการชำระเงิน<br>
+                    Processing = ชำระเงินสำเร็จ รอจัดส่งสินค้า<br>
+                    Complete = จัดส่งสำเร็จ รอรับสินค้า 1-2 วัน</p><br><br><br>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+    </div>
+
+    <!-- FahFahsWorld Footer -->
+    <div class="footer footer-style">
+        <center>
+            <a class="text-dark img-footer a-footer" href="https://www.facebook.com/FAHFAHSNKshop/"><i class="fa fa-facebook size-i"></i>&nbsp;</a>
+            <a class="text-dark img-footer a-footer" href="https://twitter.com/Fahfahs_world"><i class="fa fa-twitter size-i"></i></a>
+            <a class="text-dark img-footer a-footer" href="https://www.instagram.com/fahfahshop/"><i class="fa fa-instagram size-i"></i></a>
+            <a class="text-dark img-footer a-footer" href="http://qr-official.line.me/L/FJVNHcAEp9.png"><img class="text-dark size-line" src="https://i.ibb.co/6wDzDnT/line-logo.png"></a>
+            <br><br>
+            <a class="text-dark a-footer" href="index.html">&nbsp;HOME&nbsp;</a> |
+            <a class="text-dark a-footer" href="shop.html">&nbsp;SHOP&nbsp;</a> |
+            <a class="text-dark a-footer" href="blogpage1.html">&nbsp;BLOG&nbsp;</a> |
+            <a class="text-dark a-footer" href="aboutus.html">&nbsp;ABOUT US&nbsp;</a> |
+            <a class="text-dark a-footer" href="contactus.html">&nbsp;CONTACT US&nbsp;</a> |
+            <a class="text-dark a-footer" href="offinestore.html">&nbsp;OFFLINE STORE&nbsp;</a> |
+            <a class="text-dark a-footer" href="termandconditions.html">&nbsp;TERM AND CONDITIONS&nbsp;</a> |
+            <a class="text-dark a-footer" href="privacy.html">&nbsp;PRIVACY POLICY&nbsp;</a>
+        </center>
+    </div>
+</body>
+</html>

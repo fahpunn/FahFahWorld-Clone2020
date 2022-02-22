@@ -1,0 +1,203 @@
+* {
+    font-family: 'Kanit', Times, serif;
+}
+
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    border: 0px;
+    outline: none;
+}
+
+.container {
+    max-width: 1700px;
+}
+
+.opacity {
+    transition-duration: 0.3s;
+}
+
+.opacity:hover {
+    opacity: 50%;
+    transition-duration: 0.3s;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.nav-link {
+    transition-duration: 0.3s;
+    color: white;
+}
+
+.nav-link:hover {
+    transition-duration: 0.3s;
+    color: black;
+    opacity: 50%;
+}
+
+.nav-item {
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.img-margin {
+    margin-top: -80px;
+}
+
+.transition-time {
+    transition-duration: 0.3s;
+}
+
+.nav-transition-scroll {
+    transition-duration: 0.3s;
+}
+
+.footer-style {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: whitesmoke;
+}
+
+.a-footer {
+    transition-duration: 0.3s;
+    text-decoration: none;
+}
+
+.a-footer:hover {
+    transition-duration: 0.3s;
+    text-decoration: none;
+    opacity: 50%;
+}
+
+.button {
+    display: inline-block;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #f79468;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 9px #f46e33;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: #f79468;;
+    box-shadow: 0 5px #f46e33;
+    transform: translateY(4px);
+    transition-duration: 0.3s;
+    opacity: 75%;
+}
+
+.button-color-background {
+    background-color: #f0d4ce;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.pink-left {
+    background-color: #efc8c1;
+}
+
+.pink-right {
+    background-color: #efd6d1;
+}
+
+.span-padding {
+    padding: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        background-color: white;
+    }
+    .nav-link {
+        color: black;
+    }
+}
+
+/*point*/
+.ttbbbb {
+    padding-top: 85px;
+    font-weight: 900;
+    font-size: 70px;
+    color: black;
+}
+.ttbbb {
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+}
+.ttbb {
+    padding-top: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+}
+.ttb {
+    
+    font-weight: 900;
+    color: black;
+}
+.tt {
+    padding-top: 0px;
+    color: rgb(84,84,84);
+}
+.linep{
+    width: 90%;
+    background-color: rgb(201, 201, 201);
+    
+}
+.button-red {
+    display: inline-block;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #f4524d;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 9px #f11f18;
+    transition-duration: 0.3s;
+}
+
+.button-red:hover {
+    background-color: #f4524d;
+    box-shadow: 0 5px #f11f18;
+    transform: translateY(4px);
+    transition-duration: 0.3s;
+    opacity: 75%;
+}
